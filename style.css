@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(6, 28, 69);
+    
+    background-image:linear-gradient(black,blue,purple);
     color: white;
     margin: 0px;
     padding: 0px;
@@ -191,7 +192,7 @@ div.gallery {
     clear: both;
   }
 
-  .images {
+  .images  {
     display: flex;
     max-height: 300px;
     justify-content: center;
@@ -229,3 +230,38 @@ div.gallery {
     background: #3B5998;
     color: white;
   }
+
+  .images2  {
+    display: flex;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+.what {
+  display: flex;
+  flex-direction: column;
+}
+.image-gallery {
+  display: flex;
+  flex-direction: row; /* Arrange images horizontally */
+  gap: 20px;
+  height: 500px;
+  width: 2000px; /* Set a fixed width for the gallery */
+  overflow-x: auto; /* Enable vertical scrolling */
+  padding: 10px;
+}
+
+.image-gallery img {
+  width: auto;
+  height: 500px;
+  border: 3px solid #555;
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  border: 3px solid #555;
+} 
+
